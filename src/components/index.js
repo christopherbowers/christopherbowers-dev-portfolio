@@ -1,0 +1,7 @@
+export { default as Nav } from './nav'
+export { default as Footer } from './footer'
+export { default as Layout } from './layout'
+export { default as HeadMeta } from './head'
+export { default as Hero } from './hero'
+export { default as Projects } from './projects'
+export { default as Contact } from './contact'
