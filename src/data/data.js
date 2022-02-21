@@ -23,7 +23,7 @@ module.exports = {
       ],
     },
     {
-      title: 'Portfolio',
+      title: 'Photography Portfolio',
       link: 'https://photo.christopherbowers.net',
       github: 'https://github.com/christopherbowers/sencha',
       imgUrl: '/portfolio.png',

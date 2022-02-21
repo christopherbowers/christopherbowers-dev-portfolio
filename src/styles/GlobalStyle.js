@@ -49,6 +49,11 @@ const GlobalStyle = createGlobalStyle`
     font-size: clamp(25px, 8vw, 60px);
   }
 
+  .section-heading {
+    margin: 0;
+    font-size: clamp(25px, 8vw, 40px);
+  }
+
   #root, #__next {
     isolation: isolate;
   }
