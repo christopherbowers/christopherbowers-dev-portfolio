@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
-import { projects } from '../data/data'
+import { projects } from '@data/data'
 import Image from 'next/image'
-import { srConfig as config } from '../config'
+import { srConfig as config } from '@config'
 
 export default function Projects() {
 
@@ -32,7 +32,7 @@ useEffect(() => {
 
           <p>{project.title}</p>
 
-          <div style={{width: '400px'}}>
+          <div>
             <Image src={project.imgUrl} alt={project.title} width="100%" height="100%" layout="responsive" objectFit="contain" />
           </div>
 
