@@ -1,7 +1,7 @@
 import Head from 'next/head'
 // import data from '../data/data'
 
-export default function HeadMeta() {
+export default function Meta() {
 
   return (
     <Head>
