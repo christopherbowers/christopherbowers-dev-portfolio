@@ -57,7 +57,7 @@ const Header = styled.header`
 
   .site-header__wrapper {
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 2.3rem;
   }
 
   @media (min-width: 600px) {
