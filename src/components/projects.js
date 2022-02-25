@@ -51,12 +51,12 @@ useEffect(() => {
 
           <ProjectLinks>
             <li>
-              <a href={externalUrl} target="_blank">
+              <a href={externalUrl} target="_blank" rel="noreferrer">
                 <IconExternal />
               </a>
             </li>
             <li>
-              <a href={github} target="_blank">
+              <a href={github} target="_blank" rel="noreferrer">
                 <IconGitHub />
               </a>
             </li>
