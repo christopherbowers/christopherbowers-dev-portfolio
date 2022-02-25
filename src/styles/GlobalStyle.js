@@ -46,7 +46,12 @@ const GlobalStyle = createGlobalStyle`
 
   .medium-heading {
     margin: 0;
-    font-size: clamp(25px, 8vw, 60px);
+    font-size: clamp(20px, 7vw, 55px);
+  }
+
+  .section-heading {
+    margin: 10px 0 40px;
+    font-size: clamp(25px, 8vw, 40px);
   }
 
   #root, #__next {
@@ -56,7 +61,7 @@ const GlobalStyle = createGlobalStyle`
   main {
     margin: 0 auto;
     width: 100%;
-    max-width: 1600px;
+    max-width: 1200px;
     min-height: 100vh;
     padding: 0 150px;
 
@@ -80,6 +85,7 @@ const GlobalStyle = createGlobalStyle`
       padding: 0 25px;
     }
   }
+
 
 
 `

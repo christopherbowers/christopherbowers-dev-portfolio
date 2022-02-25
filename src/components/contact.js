@@ -1,8 +1,8 @@
-import { name, email, phone, address } from '../data/data'
+import { name, email, phone, address } from '@data/data'
 
 export default function Contact() {
   return (
-    <div id="contact">
+    <section id="contact">
       <h4>Contact</h4>
       <ul>
         <li>{name}</li>
@@ -10,6 +10,6 @@ export default function Contact() {
         <li>{phone}</li>
         <li>{address}</li>
       </ul>
-    </div>
+    </section>
   )
 }
