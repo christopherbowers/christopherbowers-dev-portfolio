@@ -38,7 +38,7 @@ useEffect(() => {
           </h5>
 
           <ImageWrapper>
-            <Image src={imgUrl} alt={title} width="100%" height="100%" layout="responsive" objectFit="cover"/>
+            <Image src={imgUrl} alt={title} width={1920} height={1080} layout="responsive" objectFit="contain"/>
           </ImageWrapper>
 
           <ul className="tech-list">
@@ -108,6 +108,7 @@ a:hover {
   margin: 20px 0;
   font-family: monospace;
 }
+  position: relative;
 `
 
 const ProjectLinks = styled.ul`
@@ -124,6 +125,12 @@ const ProjectLinks = styled.ul`
 `
 
 const ImageWrapper = styled.div`
-  width: clamp(50px, 90%, 900px);
+
+
+  width: clamp(50px, 65%, 900px);
+
+  span {
+    padding-top: 0;
+  }
 `
 
