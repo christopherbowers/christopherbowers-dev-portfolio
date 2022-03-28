@@ -25,7 +25,7 @@ module.exports = {
     },
     {
       title: 'Photography Portfolio',
-      externalUrl: 'https://photo.christopherbowers.net',
+      externalUrl: 'https://bowers-portfolio.herokuapp.com',
       link: 'https://photo.christopherbowers.net',
       github: 'https://github.com/christopherbowers/sencha',
       imgUrl: '/portfolio.jpg',

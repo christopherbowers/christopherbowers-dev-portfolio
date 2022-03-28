@@ -17,7 +17,6 @@ useEffect(() => {
     if (revealTitle.current) {
       const sr = (await import("scrollreveal")).default
       sr().reveal(revealTitle.current, config(0, 0.25))
-      // sr().reveal(revealProjects.current, config(500, 0.25))
       revealProjects.current.forEach((ref, i) => sr().reveal(ref, config(i * 100)))
     }
   }
