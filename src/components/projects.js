@@ -101,6 +101,7 @@ const ProjectLinks = styled.div`
 
 const ImageWrapper = styled.div`
   width: clamp(50px, 65%, 900px);
+  aspect-ratio: 16 / 9;
 
   span {
     padding-top: 0;
