@@ -1,37 +1,17 @@
-import { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { projects } from '@data/data'
-import { srConfig as config } from '@config'
 import { IconGitHub, IconExternal } from '@components/icons'
 import styled from 'styled-components'
 
-
 export default function Projects() {
-
-const revealTitle = useRef(null)
-const revealProjects = useRef([])
-
-
-useEffect(() => {
-  async function animate() {
-    if (revealTitle.current) {
-      const sr = (await import("scrollreveal")).default
-      sr().reveal(revealTitle.current, config(0, 0.25))
-      revealProjects.current.forEach((ref, i) => sr().reveal(ref, config(i * 100)))
-    }
-  }
-  animate()
-
-}, [])
-
 
   return (
     <section id="projects">
-    <h4 className="section-heading" ref={revealTitle}>Projects</h4>
+    <h4 className="section-heading">Projects</h4>
 
     {projects.map(({title, imgUrl, externalUrl, github, tech, description}, i) => {
       return (
-        <ProjectWrapper key={i} ref={el => (revealProjects.current[i] = el)}>
+        <ProjectWrapper key={i}>
           <h5>
             <a href={externalUrl}>{title}</a>
           </h5>
@@ -49,18 +29,13 @@ useEffect(() => {
           <p>{description}</p>
 
           <ProjectLinks>
-            <li>
-              <a href={externalUrl} target="_blank" rel="noreferrer">
-                <IconExternal />
-              </a>
-            </li>
-            <li>
-              <a href={github} target="_blank" rel="noreferrer">
-                <IconGitHub />
-              </a>
-            </li>
+            <a href={externalUrl} target="_blank" rel="noreferrer">
+              <IconExternal />
+            </a>
+            <a href={github} target="_blank" rel="noreferrer">
+              <IconGitHub />
+            </a>
           </ProjectLinks>
-
         </ProjectWrapper>
       )
     })}
@@ -71,12 +46,12 @@ useEffect(() => {
 
 
 const ProjectWrapper = styled.div`
-
   display: flex;
   flex-flow: column nowrap;
   justify-items: center;
   align-items: center;
   margin: 0 auto 40px;
+  position: relative;
 
   h5 {
     font-size: clamp(20px, 6vw, 30px);
@@ -93,39 +68,38 @@ const ProjectWrapper = styled.div`
     margin: 0 10px 5px 10px;
   }
 
-a {
-  color: hsl(0, 0%, 100%);
-  text-decoration: none;
-  transition: .3s;
-}
-
-a:hover {
-  color: gray;
-}
-
-.tech-list {
-  margin: 20px 0;
-  font-family: monospace;
-}
-  position: relative;
-`
-
-const ProjectLinks = styled.ul`
-  margin: 20px 0;
-
-  .bi {
-    height: 1.5rem;
+  a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
     transition: .3s;
+
+    &:hover {
+      color: gray;
+    }
   }
 
-  .bi:hover {
-    color: rgb(1, 112, 243);
-    // transform: scale(1.1);
+  .tech-list {
+    margin: 20px 0;
+    font-family: monospace;
+  }
+`
+
+const ProjectLinks = styled.div`
+  display: flex;
+  margin: 20px 0;
+
+  a {
+    padding: 0 10px;
+    height: 1.5rem;
+    transition: .3s;
+
+    &:hover {
+      color: rgb(1, 112, 243);
+    }
+  }
 `
 
 const ImageWrapper = styled.div`
-
-
   width: clamp(50px, 65%, 900px);
 
   span {
