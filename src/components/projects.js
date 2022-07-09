@@ -1,37 +1,17 @@
-import { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { projects } from '@data/data'
-import { srConfig as config } from '@config'
 import { IconGitHub, IconExternal } from '@components/icons'
 import styled from 'styled-components'
 
-
 export default function Projects() {
-
-const revealTitle = useRef(null)
-const revealProjects = useRef([])
-
-
-useEffect(() => {
-  async function animate() {
-    if (revealTitle.current) {
-      const sr = (await import("scrollreveal")).default
-      sr().reveal(revealTitle.current, config(0, 0.25))
-      revealProjects.current.forEach((ref, i) => sr().reveal(ref, config(i * 100)))
-    }
-  }
-  animate()
-
-}, [])
-
 
   return (
     <section id="projects">
-    <h4 className="section-heading" ref={revealTitle}>Projects</h4>
+    <h4 className="section-heading">Projects</h4>
 
     {projects.map(({title, imgUrl, externalUrl, github, tech, description}, i) => {
       return (
-        <ProjectWrapper key={i} ref={el => (revealProjects.current[i] = el)}>
+        <ProjectWrapper key={i}>
           <h5>
             <a href={externalUrl}>{title}</a>
           </h5>
