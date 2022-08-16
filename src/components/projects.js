@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { projects } from '@data/data'
 import { IconGitHub, IconExternal } from '@components/icons'
-import styled from 'styled-components'
+import styles from '@styles/projects.module.scss'
 
 export default function Projects() {
 
@@ -11,14 +11,14 @@ export default function Projects() {
 
     {projects.map(({title, imgUrl, externalUrl, github, tech, description}, i) => {
       return (
-        <ProjectWrapper key={i}>
+        <div className={styles.projectWrapper} key={i}>
           <h5>
             <a href={externalUrl}>{title}</a>
           </h5>
 
-          <ImageWrapper>
+          <div className={styles.imageWrapper}>
             <Image src={imgUrl} alt={title} width={1920} height={1080} layout="responsive" objectFit="contain"/>
-          </ImageWrapper>
+          </div>
 
           <ul className="tech-list">
             {tech.map((tech, i) => (
@@ -28,83 +28,17 @@ export default function Projects() {
 
           <p>{description}</p>
 
-          <ProjectLinks>
+          <div className={styles.projectLinks}>
             <a href={externalUrl} target="_blank" rel="noreferrer">
               <IconExternal />
             </a>
             <a href={github} target="_blank" rel="noreferrer">
               <IconGitHub />
             </a>
-          </ProjectLinks>
-        </ProjectWrapper>
+          </div>
+        </div>
       )
     })}
   </section>
-
   )
 }
-
-
-const ProjectWrapper = styled.div`
-  display: flex;
-  flex-flow: column nowrap;
-  justify-items: center;
-  align-items: center;
-  margin: 0 auto 40px;
-  position: relative;
-
-  h5 {
-    font-size: clamp(20px, 6vw, 30px);
-  }
-
-  ul {
-    display: flex;
-    flex-flow: row wrap;
-    padding: 0;
-  }
-
-  li {
-    list-style: none;
-    margin: 0 10px 5px 10px;
-  }
-
-  a {
-    color: hsl(0, 0%, 100%);
-    text-decoration: none;
-    transition: .3s;
-
-    &:hover {
-      color: gray;
-    }
-  }
-
-  .tech-list {
-    margin: 20px 0;
-    font-family: monospace;
-  }
-`
-
-const ProjectLinks = styled.div`
-  display: flex;
-  margin: 20px 0;
-
-  a {
-    padding: 0 10px;
-    height: 1.5rem;
-    transition: .3s;
-
-    &:hover {
-      color: rgb(1, 112, 243);
-    }
-  }
-`
-
-const ImageWrapper = styled.div`
-  width: clamp(50px, 65%, 900px);
-  aspect-ratio: 16 / 9;
-
-  span {
-    padding-top: 0;
-  }
-`
-
