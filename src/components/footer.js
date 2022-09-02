@@ -1,15 +1,9 @@
-import styled from 'styled-components'
+import styles from '@styles/footer.module.scss'
 
 export default function Footer() {
   return (
-    <Wrapper>
+    <section className={styles.footer}>
       <p>Designed &amp; Built by Christopher Bowers</p>
-    </Wrapper>
+    </section>
   )
 }
-
-const Wrapper = styled.section`
-  text-align: center;
-  padding: 20px 0;
-  font-size: .8em;
-`

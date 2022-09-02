@@ -1,18 +1,13 @@
 import { Hero, About, Projects, Contact } from '@components/.'
-import styled from 'styled-components'
 
 export default function IndexPage() {
 
   return (
-    <Wrapper>
+    <main>
       <Hero />
 {/*       <About /> */}
       <Projects />
       <Contact />
-    </Wrapper>
+    </main>
   )
 }
-
-const Wrapper = styled.main`
-
-`
