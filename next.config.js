@@ -1,6 +1,9 @@
-module.exports = {
+const nextConfig = {
   reactStrictMode: true,
-  compiler: {
-    styledComponents: true,
+  swcMinify: true,
+  experimental: {
+    optimizeCss: true
   },
 }
+
+module.exports = nextConfig
