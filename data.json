@@ -1,0 +1,79 @@
+{
+  "githubUsername": "christopherbowers",
+  "name": "Christopher Bowers",
+  "designation": "Full-Stack Developer",
+  "avatarUrl": "/me.jpg",
+  "email": "c_bowers@me.com",
+  "phone": "617-909-2161",
+  "address": "Boston, MA",
+  "navLinks": [
+    {
+      "name": "Projects",
+      "url": "#projects"
+    },
+    {
+      "name": "Contact",
+      "url": "#contact"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Sencha",
+      "externalUrl": "https://sencha-app.netlify.app",
+      "link": "https://sencha-app.netlify.app",
+      "github": "https://github.com/christopherbowers/sencha",
+      "imgUrl": "/sencha.jpg",
+      "description": "Sencha is a web application for managing support tickets.",
+      "tech": [
+        "React",
+        "Django",
+        "PostgreSQL",
+        "Styled Components",
+        "Heroku",
+        "Netlify"
+      ]
+    },
+    {
+      "title": "Photography Portfolio",
+      "externalUrl": "https://photo.christopherbowers.net",
+      "link": "https://photo.christopherbowers.net",
+      "github": "https://github.com/christopherbowers/Photography-Portfolio-v3",
+      "imgUrl": "/portfolio.jpg",
+      "description": "The third revision of my photography portfolio.",
+      "tech": [
+        "React",
+        "Express",
+        "MongoDB",
+        "Heroku"
+      ]
+    },
+    {
+      "title": "drby",
+      "externalUrl": "https://drby-app.herokuapp.com",
+      "link": "https://drby-app.herokuapp.com",
+      "github": "https://github.com/christopherbowers/drby",
+      "imgUrl": "/drby.jpg",
+      "description": "A full stack message board application with user authentication",
+      "tech": [
+        "React",
+        "Express",
+        "PostgreSQL",
+        "Heroku",
+        "Styled Components"
+      ]
+    }
+  ],
+  "about": {
+    "title": "I make things for the web.",
+    "description": [
+      "I'm a full stack software engineer with a background in design and photography. Motivated by a strong curiosity and determined desire to learn. With a combination of art and technical backgrounds I make teams better by mixing creativity with strategic problem solving."
+    ],
+    "currentProject": "Sencha",
+    "currentProjectUrl": "https://sencha-app.netlify.app"
+  },
+  "resumeUrl": "",
+  "socialLinks": {
+    "linkedin": "https://linkedin.com/in/christopher-bowers-dev",
+    "github": "https://github.com/christopherbowers"
+  }
+}
