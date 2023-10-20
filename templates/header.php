@@ -7,6 +7,7 @@
 	<style type="text/css">
 	<?php include("styles.css") ?>
 	</style>
+	<link href=data:, rel=icon>
 	<link rel="me" href="https://webperf.social/@christopherbowers">
 </head>
 <body>
