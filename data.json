@@ -20,7 +20,6 @@
     {
       "title": "Sencha",
       "externalUrl": "https://sencha-app.netlify.app",
-      "link": "https://sencha-app.netlify.app",
       "github": "https://github.com/christopherbowers/sencha",
       "imgUrl": "/sencha.jpg",
       "description": "Sencha is a web application for managing support tickets.",
@@ -36,7 +35,6 @@
     {
       "title": "Photography Portfolio",
       "externalUrl": "https://photo.christopherbowers.net",
-      "link": "https://photo.christopherbowers.net",
       "github": "https://github.com/christopherbowers/Photography-Portfolio-v3",
       "imgUrl": "/portfolio.jpg",
       "description": "The third revision of my photography portfolio.",
@@ -44,13 +42,12 @@
         "React",
         "Express",
         "MongoDB",
-        "Heroku"
+        "Docker"
       ]
     },
     {
       "title": "drby",
       "externalUrl": "https://drby-app.herokuapp.com",
-      "link": "https://drby-app.herokuapp.com",
       "github": "https://github.com/christopherbowers/drby",
       "imgUrl": "/drby.jpg",
       "description": "A full stack message board application with user authentication",
