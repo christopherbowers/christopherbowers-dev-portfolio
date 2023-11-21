@@ -2,7 +2,7 @@
   "githubUsername": "christopherbowers",
   "name": "Christopher Bowers",
   "designation": "Full-Stack Developer",
-  "avatarUrl": "/me.jpg",
+  "avatarUrl": "/me.webp",
   "email": "c_bowers@me.com",
   "phone": "617-909-2161",
   "address": "Boston, MA",
@@ -21,7 +21,7 @@
       "title": "Sencha",
       "externalUrl": "https://sencha-app.netlify.app",
       "github": "https://github.com/christopherbowers/sencha",
-      "imgUrl": "/sencha.jpg",
+      "imgUrl": "/sencha.webp",
       "description": "Sencha is a web application for managing support tickets.",
       "tech": [
         "React",
@@ -36,7 +36,7 @@
       "title": "Photography Portfolio",
       "externalUrl": "https://photo.christopherbowers.net",
       "github": "https://github.com/christopherbowers/Photography-Portfolio-v3",
-      "imgUrl": "/portfolio.jpg",
+      "imgUrl": "/portfolio.webp",
       "description": "The third revision of my photography portfolio.",
       "tech": [
         "React",
@@ -49,7 +49,7 @@
       "title": "drby",
       "externalUrl": "https://drby-app.herokuapp.com",
       "github": "https://github.com/christopherbowers/drby",
-      "imgUrl": "/drby.jpg",
+      "imgUrl": "/drby.webp",
       "description": "A full stack message board application with user authentication",
       "tech": [
         "React",
