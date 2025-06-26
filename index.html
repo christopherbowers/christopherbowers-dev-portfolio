@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Christopher Bowers Full-stack Developer</title>
+	<style>
+		*, *::before, *::after { box-sizing: border-box; }
+		* { margin: 0; }
+		:root { color-scheme: light dark;}
+		html, body { height: 100%; }
+		body {
+			line-height: 1.5;
+			-webkit-font-smoothing: antialiased;
+			font-family: system-ui, 'Helvetica Neue', Helvetica, sans-serif;
+		}
+		img, picture, video, svg, canvas { display: block; max-width: 100%; }
+		a { color: light-dark(black, white); transition: all 500ms; }
+		a:hover { text-decoration-thickness: 8px; }
+		p, h1, h2, h3, h4, h5, h6 { overflow-wrap: break-word; }
+		h1, h2, h3, h4, h5, h6 { margin: 0 0 10px 0; font-weight: 600; line-height: 1.1; }
+
+		main {
+			margin: 0 auto; width: 100%; max-width: 1200px; min-height: 100vh; padding: 0 150px;
+			@media (max-width: 1080px) { padding: 200px 100px; }
+			@media (max-width: 768px) { padding: 150px 50px; }
+			@media (max-width: 480px) { padding: 125px 25px; }
+			@media (max-width: 1080px) { padding: 0 100px; }
+			@media (max-width: 768px) { padding: 0 50px; }
+			@media (max-width: 480px) { padding: 0 25px; }
+		}
+
+	.hero { padding: 80px 0; font-weight: 600; margin: 0 0 10px 0; font-weight: 600; line-height: 1.1; }
+	.big-heading { display: block; margin: 0; font-size: clamp(30px, 8vw, 70px); }
+	.medium-heading { margin-top: 10px; line-height: 0.9; display: block; margin: 0; font-size: clamp(20px, 7vw, 55px); }
+
+	nav ul {
+		display: flex;
+		list-style-type: none;
+		justify-content: flex-end;
+	}
+
+	nav {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 999;
+		display: block;
+	}
+
+	nav li {
+		padding: 1.5rem 1rem;
+
+		& a {
+			display: block;
+			text-decoration: none;
+			transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+			border-bottom: 2px solid transparent;
+
+			&:hover {
+				border-bottom: 2px solid currentColor;
+				width: fit-content;
+
+				&:has(svg) {
+					opacity: .5;
+					border-bottom: 2px solid transparent;
+				}
+			}
+		}
+	}
+
+	</style>
+	<link href="data:," rel="icon">
+	<link rel="me" href="https://webperf.social/@christopherbowers">
+</head>
+<body>
+<div class="layout_wrapper">
+			<nav>
+				<ul>
+					<li><a href="https://photo.christopherbowers.net">Photography</a></li>
+					<li><a href="https://github.com/christopherbowers" target="_blank" rel="noreferrer" aria-label="GitHub Profile"><svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-github" viewbox="0 0 16 16" role="img" aria-labelledby="title desc">
+					<title id="title">GitHub</title>
+					<desc id="desc">GitHub Icon</desc><path role="presentation" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg></a></li>
+				</ul>
+			</nav>
+
+	<main>
+		<div class="hero">
+			<h1 class="big-heading">Christopher Bowers</h1>
+			<h2 class="medium-heading">Full stack engineer at <a href="https://www.wbur.org">wbur.org</a></h2>
+		</div>
+	</main>
+</div>
+</body>
+</html>
